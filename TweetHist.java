@@ -61,13 +61,16 @@ public class TweetHist {
     	    	    System.out.printf("%50s     ", x);
     	    	    System.out.printf("%d\n", unique_words.get(x));
     	    }
+	    /*
+	    editing out the header ling to make the data output compatible for R.
     	    String header2 = "Unique Address:     Count";
     	    System.out.printf("%50s", header2);
+	    */
     	    for (String y: unique_address.keys()) {
     	    	    //if (unique.get(x) < 100) {continue;}
-    	    	    System.out.println("I am going through the loop"); // not going through the loop
-    	    	    System.out.printf("%50s     ", y);
-    	    	    System.out.printf("%d\n", unique_address.get(y));
+    	    	    //System.out.println("I am going through the loop"); // not going through the loop
+    	    	    System.out.printf("%20s     ", y);
+    	    	    System.out.printf("10%d\n", unique_address.get(y));
     	    }   
     }
 }
